@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Worldly Bites</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+    }
+
+    header {
+      position: relative;
+      text-align: center;
+      color: white;
+    }
+
+    header img {
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
+      animation: zoomInImage 2s ease-out forwards;
+    }
+
+    h1 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 48px;
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 10px 20px;
+      border-radius: 10px;
+      animation: fadeInTitle 1.5s ease-out forwards;
+    }
+
+    @keyframes zoomInImage {
+      0% {
+        transform: scale(1);
+        opacity: 0.7;
+      }
+      100% {
+        transform: scale(1.05);
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeInTitle {
+      0% {
+        transform: translate(-50%, -60%) scale(0.8);
+        opacity: 0;
+      }
+      100% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+      }
+    }
+
+    nav {
+      background-color: brown;
+      padding: 10px 0;
+      position: relative;
+    }
+
+    .nav-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      padding: 10px 15px;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      transform: scale(1.1);
+      background-color: #a0522d;
+      border-radius: 5px;
+    }
+
+    .menu-icon {
+      display: none;
+      font-size: 30px;
+      color: white;
+      cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+      .nav-container {
+        flex-direction: column;
+        position: relative;
+      }
+
+      .menu-icon {
+        display: block;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        background-color: brown;
+        position: absolute;
+        top: 100%;
+        left: 0;
+      }
+
+      .nav-links.show {
+        display: flex;
+      }
+    }
+
+    section {
+      padding: 15px;
+      text-align: center;
+      background-color: #ffe6cc;
+      animation: fadeUp 1s ease-out forwards;
+    }
+
+    section h2 {
+      font-size: 28px;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    section p {
+      font-size: 18px;
+      color: #555;
+      line-height: 1.6;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="https://www.franciscosegarra.com/wp-content/uploads/2022/03/restaurant-decoration.jpg" alt="Restaurant Image">
+    <h1>Worldly Bites</h1>
+  </header>
+
+  <nav>
+    <div class="nav-container">
+      <div class="menu-icon" onclick="toggleMenu()">☰</div>
+      <div class="nav-links" id="navLinks">
+        <a href="about.html" target="_blank">About</a>
+        <a href="menu.html" target="_blank">Menu</a>
+        <a href="contact.html" target="_blank">Contact</a>
+        <a href="Gallery.html" target="_blank">Gallery</a>
+      </div>
+    </div>
+  </nav>
+
+  <section>
+    <h2>Bringing the World to Your Plate</h2>
+    <p>
+      Embark on a journey through taste with dishes crafted from the freshest ingredients, inspired by cultures around the globe. From our kitchen to your table, every bite tells a story of tradition, passion, and creativity.
+    </p>
+  </section>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("navLinks").classList.toggle("show");
+    }
+  </script>
+
+</body>
+</html>

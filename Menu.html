@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Worldly Bites</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f0e4d7; 
+            color: #333;
+        }
+        header {
+            background-color: brown;
+            color: white;
+            text-align: center;
+            padding: 2px 0;
+        }
+        header h1 {
+            font-size: 36px;
+            font-family: 'Times New Roman';
+            font-weight: bold;
+            animation: fadeZoom 1.5s ease-out;
+        }
+        section {
+            padding: 40px;
+            max-width: 900px;
+            margin: 20px auto;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        section h2 {
+            font-size: 28px;
+            color: brown;
+            text-align: center;
+            margin-bottom: 20px;
+            font-family: 'Trebuchet MS';
+            text-transform: uppercase;
+        }
+        h3 {
+            font-size: 22px;
+            color: darkgreen;
+            margin-top: 20px;
+        }
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 15px;
+            border-bottom: 1px solid #ddd;
+            transition: transform 0.2s ease-in-out, background 0.3s ease-in-out;
+        }
+        .menu-item:last-child {
+            border-bottom: none;
+        }
+        .menu-item span {
+            font-size: 18px;
+        }
+        .menu-item .dish {
+            font-weight: bold;
+            color: #555;
+        }
+        .menu-item .price {
+            font-style: italic;
+            color: #777;
+        }
+
+        /* Hover Effect */
+        .menu-item:hover {
+            background: #ffe6d5;
+            transform: scale(1.02);
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Explore Our Global Vegetarian Menu</h1>
+</header>
+
+<!-- Indian Section -->
+<section>
+    <h2>Authentic Indian Delights</h2>
+
+    <h3>Starters</h3>
+    <div class="menu-item"><span class="dish">Paneer Tikka (Grilled cottage cheese marinated in spices)</span> <span class="price">₹280</span></div>
+    <div class="menu-item"><span class="dish">Hara Bhara Kebab (Spinach and green pea cutlets)</span> <span class="price">₹250</span></div>
+    <div class="menu-item"><span class="dish">Dahi Puri (Crispy puris filled with yogurt and chutneys)</span> <span class="price">₹180</span></div>
+    <div class="menu-item"><span class="dish">Sev Puri (Tangy and spicy chaat with crunchy sev)</span> <span class="price">₹150</span></div>
+
+    <h3>Main Course</h3>
+    <div class="menu-item"><span class="dish">Paneer Butter Masala with Naan (Creamy tomato-based paneer curry with soft naan)</span> <span class="price">₹300</span></div>
+    <div class="menu-item"><span class="dish">Vegetable Biryani (Aromatic basmati rice cooked with veggies and spices)</span> <span class="price">₹350</span></div>
+    <div class="menu-item"><span class="dish">Dal Makhani with Jeera Rice (Slow-cooked black lentils with cumin-flavored rice)</span> <span class="price">₹320</span></div>
+    <div class="menu-item"><span class="dish">Baingan Bharta with Roti (Smoky mashed eggplant curry with soft roti)</span> <span class="price">₹280</span></div>
+
+    <h3>Desserts</h3>
+    <div class="menu-item"><span class="dish">Gulab Jamun (Soft fried dumplings soaked in sugar syrup)</span> <span class="price">₹120</span></div>
+    <div class="menu-item"><span class="dish">Rasmalai (Cottage cheese dumplings in saffron-flavored milk)</span> <span class="price">₹150</span></div>
+    <div class="menu-item"><span class="dish">Jalebi (Crispy, deep-fried spirals dipped in syrup)</span> <span class="price">₹130</span></div>
+    <div class="menu-item"><span class="dish">Malai Kulfi (Rich and creamy frozen Indian dessert)</span> <span class="price">₹160</span></div>
+</section>
+
+<!-- Italian Section -->
+<section>
+    <h2>Italian Classics</h2>
+
+    <h3>Starters</h3>
+    <div class="menu-item"><span class="dish">Bruschetta (Toasted bread topped with tomatoes and basil)</span> <span class="price">₹200</span></div>
+    <div class="menu-item"><span class="dish">Garlic Bread (Oven-baked bread with butter and garlic)</span> <span class="price">₹180</span></div>
+    <div class="menu-item"><span class="dish">Caprese Salad (Fresh mozzarella, tomatoes, and basil with olive oil)</span> <span class="price">₹220</span></div>
+    <div class="menu-item"><span class="dish">Minestrone Soup (Hearty Italian vegetable soup)</span> <span class="price">₹190</span></div>
+
+    <h3>Main Course</h3>
+    <div class="menu-item"><span class="dish">Margherita Pizza (Classic pizza with tomato, mozzarella, and basil)</span> <span class="price">₹450</span></div>
+    <div class="menu-item"><span class="dish">Penne Alfredo (Creamy pasta with rich parmesan sauce)</span> <span class="price">₹400</span></div>
+    <div class="menu-item"><span class="dish">Mushroom Risotto (Creamy Italian rice with wild mushrooms)</span> <span class="price">₹420</span></div>
+    <div class="menu-item"><span class="dish">Lasagna (Layered pasta with tomato sauce, ricotta, and cheese)</span> <span class="price">₹480</span></div>
+
+    <h3>Desserts</h3>
+    <div class="menu-item"><span class="dish">Tiramisu (Coffee-flavored Italian layered dessert)</span> <span class="price">₹300</span></div>
+    <div class="menu-item"><span class="dish">Panna Cotta (Creamy Italian pudding with berry sauce)</span> <span class="price">₹250</span></div>
+    <div class="menu-item"><span class="dish">Cannoli (Crispy pastry filled with sweet ricotta)</span> <span class="price">₹280</span></div>
+    <div class="menu-item"><span class="dish">Zeppole (Fried Italian doughnuts with powdered sugar)</span> <span class="price">₹260</span></div>
+</section>
+<!-- Japanese Section -->
+<section>
+    <h2>Authentic Japanese Cuisine</h2>
+
+    <h3>Starters</h3>
+    <div class="menu-item"><span class="dish">Edamame (Steamed Soybeans)</span> <span class="price">₹200</span></div>
+    <div class="menu-item"><span class="dish">Vegetarian Miso Soup (With Tofu & Seaweed)</span> <span class="price">₹180</span></div>
+    <div class="menu-item"><span class="dish">Gyoza (Vegetable Dumplings)</span> <span class="price">₹250</span></div>
+    <div class="menu-item"><span class="dish">Agedashi Tofu (Fried Tofu in Dashi Sauce)</span> <span class="price">₹270</span></div>
+
+    <h3>Main Course</h3>
+    <div class="menu-item"><span class="dish">Vegetarian Sushi Platter (Avocado, Cucumber, Carrot Rolls)</span> <span class="price">₹450</span></div>
+    <div class="menu-item"><span class="dish">Yaki Onigiri (Grilled Rice Balls with Soy Glaze)</span> <span class="price">₹320</span></div>
+    <div class="menu-item"><span class="dish">Tempura Udon Noodles (Veg Tempura & Udon in Soy Broth)</span> <span class="price">₹400</span></div>
+    <div class="menu-item"><span class="dish">Vegetable Ramen (Soy-based Broth, Tofu & Greens)</span> <span class="price">₹380</span></div>
+
+    <h3>Desserts</h3>
+    <div class="menu-item"><span class="dish">Mochi Ice Cream (Green Tea & Mango Flavors)</span> <span class="price">₹250</span></div>
+    <div class="menu-item"><span class="dish">Dorayaki (Sweet Pancakes with Red Bean Filling)</span> <span class="price">₹230</span></div>
+    <div class="menu-item"><span class="dish">Matcha Cheesecake (Green Tea Flavored Cheesecake)</span> <span class="price">₹270</span></div>
+    <div class="menu-item"><span class="dish">Taiyaki (Fish-shaped Pastry with Sweet Filling)</span> <span class="price">₹260</span></div>
+</section>
+
+<!-- French Section -->
+<section>
+    <h2>Authentic French Cuisine</h2>
+
+    <h3>Starters</h3>
+    <div class="menu-item"><span class="dish">French Onion Soup (Vegetable Stock & Cheese Crouton)</span> <span class="price">₹280</span></div>
+    <div class="menu-item"><span class="dish">Ratatouille (Traditional Vegetable Stew)</span> <span class="price">₹350</span></div>
+    <div class="menu-item"><span class="dish">Brie & Walnut Crostini (Toasted Bread with Brie Cheese & Walnuts)</span> <span class="price">₹320</span></div>
+    <div class="menu-item"><span class="dish">Warm Goat Cheese Salad (Fresh Lettuce & Nuts)</span> <span class="price">₹300</span></div>
+
+    <h3>Main Course</h3>
+    <div class="menu-item"><span class="dish">Mushroom Risotto (Creamy Rice with Wild Mushrooms)</span> <span class="price">₹420</span></div>
+    <div class="menu-item"><span class="dish">Vegetarian Quiche (Cheese, Spinach & Tomato Quiche)</span> <span class="price">₹400</span></div>
+    <div class="menu-item"><span class="dish">Gratin Dauphinois (Creamy Baked Potatoes with Cheese)</span> <span class="price">₹380</span></div>
+    <div class="menu-item"><span class="dish">Pasta Ratatouille (Pasta with Traditional French Ratatouille Sauce)</span> <span class="price">₹370</span></div>
+
+    <h3>Desserts</h3>
+    <div class="menu-item"><span class="dish">Crème Brûlée (Caramelized Vanilla Custard)</span> <span class="price">₹280</span></div>
+    <div class="menu-item"><span class="dish">Tarte Tatin (Upside-down Caramelized Apple Tart)</span> <span class="price">₹300</span></div>
+    <div class="menu-item"><span class="dish">Chocolate Soufflé (Soft & Gooey Chocolate Cake)</span> <span class="price">₹320</span></div>
+    <div class="menu-item"><span class="dish">Macarons (Assorted French Almond Cookies)</span> <span class="price">₹260</span></div>
+</section>
+
+
+
+<!-- Mexican Section -->
+<section>
+    <h2>Authentic Mexican Cuisine</h2>
+
+    <h3>Starters</h3>
+    <div class="menu-item"><span class="dish">Nachos with Cheese & Salsa</span> <span class="price">₹250</span></div>
+    <div class="menu-item"><span class="dish">Mexican Corn on the Cob</span> <span class="price">₹200</span></div>
+    <div class="menu-item"><span class="dish">Queso Dip with Tortilla Chips</span> <span class="price">₹230</span></div>
+    <div class="menu-item"><span class="dish">Stuffed Jalapeños</span> <span class="price">₹220</span></div>
+
+    <h3>Main Course</h3>
+    <div class="menu-item"><span class="dish">Vegetarian Tacos</span> <span class="price">₹350</span></div>
+    <div class="menu-item"><span class="dish">Cheese Enchiladas</span> <span class="price">₹380</span></div>
+    <div class="menu-item"><span class="dish">Veggie Burrito Bowl</span> <span class="price">₹400</span></div>
+    <div class="menu-item"><span class="dish">Spinach & Mushroom Quesadilla</span> <span class="price">₹370</span></div>
+
+    <h3>Desserts</h3>
+    <div class="menu-item"><span class="dish">Churros with Chocolate Dip</span> <span class="price">₹220</span></div>
+    <div class="menu-item"><span class="dish">Tres Leches Cake</span> <span class="price">₹250</span></div>
+    <div class="menu-item"><span class="dish">Flan</span> <span class="price">₹240</span></div>
+    <div class="menu-item"><span class="dish">Mexican Hot Chocolate</span> <span class="price">₹180</span></div>
+</section>
+
+<!-- Beverages Section -->
+<section>
+    <h2>Refreshing Beverages</h2>
+    <div class="menu-item"><span class="dish">Masala Chai</span> <span class="price">₹100</span></div>
+    <div class="menu-item"><span class="dish">Cold Coffee</span> <span class="price">₹180</span></div>
+    <div class="menu-item"><span class="dish">Lassi (Sweet/Salted)</span> <span class="price">₹150</span></div>
+    <div class="menu-item"><span class="dish">Mojito</span> <span class="price">₹200</span></div>
+    <div class="menu-item"><span class="dish">Strawberry Shake</span> <span class="price">₹190</span></div>
+    <div class="menu-item"><span class="dish">Lemon Iced Tea</span> <span class="price">₹160</span></div>
+</section>
+
+</body>
+</html>

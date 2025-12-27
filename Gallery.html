@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0e4d7; /* Antique Paper */
+            color: #333333; /* Dark Gray */
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #8B4513; /* Brown */
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            color: #FFFFFF; /* White */
+        }
+
+        /* Gallery Styles */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Gallery</h1>
+    </header>
+
+    <!-- Gallery Section -->
+    <section class="gallery">
+        <div class="gallery-item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvTrRLqpyEhoCdrqXMoPwr00L1yXI7RdW4XA&s" alt="Image 1"></div>
+        <div class="gallery-item"><img src="https://platform.ny.eater.com/wp-content/uploads/sites/6/chorus/uploads/chorus_asset/file/25056267/Cafe__Carmellini_Interior_Hero_2_WA__1_.jpeg?quality=90&strip=all&crop=0%2C0%2C100%2C100&w=2400" alt="Image 2"></div>
+        <div class="gallery-item"><img src="https://www.tuoagency.com/uploads/fs-imagen2_1.jpg" alt="Image 3"></div>
+        <div class="gallery-item"><img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2a/e0/cc/31/winterline-views.jpg?w=600&h=-1&s=1" alt="Image 4"></div>
+        <div class="gallery-item"><img src="https://content.jdmagicbox.com/comp/mussoorie/z7/9999pm135.m135.121106095721.f8z7/catalogue/terrace-restaurant-mussoorie-ho-mussoorie-restaurants-yt38n4-250.jpg" alt="image 5 "></div>
+        <div class="gallery-item"><img src="https://www.franciscosegarra.com/wp-content/uploads/2020/01/vintage.bar-designs.jpg" alt="Image 6"></div>
+        <div class="gallery-item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTp8JOe0bVV6uajkJ_PZ1R13b0sp3qL-r4gwg&s" alt="Image 7"></div>
+        <div class="gallery-item"><img src="https://i.pinimg.com/736x/50/c1/dd/50c1ddde5202a0c978dc836104f83a0b.jpg" alt="image 8"></div>
+        <div class="gallery-item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwevacqVbTBfqGp1dsVSzg3mn3vI4HSNScIg&s" alt="Image 9"></div>
+        <div class="gallery-item"><img src="https://cdn.tasteatlas.com/Images/Dishes/0017d901983544418a28c17272eb0127.jpg?m=facebook" alt="Image 10"></div>
+        <div class="gallery-item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQoLps6K9eAyf66-GCspNg2ZkyxuYEgKLS3w&s" alt="Image 11"></div>
+        <div class="gallery-item"><img src="https://mypeppermintkitchen.wordpress.com/wp-content/uploads/2020/12/rajma-chawal-cover.jpg?w=1568" alt="Image 12"></div>
+        <div class="gallery-item"><img src="https://imgmediagumlet.lbb.in/media/2024/07/66a0b4750ae4dd05ba5cfb22_1721807989786.jpg" alt="Image 13"></div>
+        <div class="gallery-item"><img src="https://images.jdmagicbox.com/comp/hyderabad/c5/040pxx40.xx40.230305183315.t3c5/catalogue/mirosa-cafe-and-kitchen-himayat-nagar-hyderabad-coffee-shops-jmu8w5oywu.jpg" alt="Image 14"></div>
+        <div class="gallery-item"><img src="https://sumesshmenonassociates.com/wp-content/uploads/2023/08/interior-design-for-cafe.webp" alt="Image 15"></div>
+        <div class="gallery-item"><img src="https://images.jdmagicbox.com/comp/pune/g9/020pxx20.xx20.180711123126.m6g9/catalogue/chafa-cafe-and-studio-koregaon-park-pune-coffee-shops-rb6uwrq17y.jpg?temp=1" alt="Image 16"></div>
+        <div class="gallery-item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGzgzz-fOheSyK9DH8FK1hw8oje6Pf-Fl9iA&s" alt="Image 17"></div>
+        <div class="gallery-item"><img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/25/9f/7a/02/cafe-terrase.jpg?w=600&h=600&s=1" alt="Image 18"></div>
+        <div class="gallery-item"><img src="https://www.franciscosegarra.com/wp-content/uploads/2020/10/italian-restaurant-interior-design-salutteria-1.jpg" alt="Image 19"></div>
+	<div class="gallery-item"><img src="https://www.franciscosegarra.com/wp-content/uploads/2020/11/interior-design-coastal-restaurants.jpg" alt="Image 20"></div>
+	<div class="gallery-item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzmjFR0oxWkxUcJ-OqokVQ5YSFZVY0sU7AaA&s alt="Image 21"></div>
+        <div class="gallery-item"><img src="https://media.istockphoto.com/id/495188382/photo/indian-pulav-vegetable-rice-veg-biryani-basmati-rice.jpg?s=612x612&w=0&k=20&c=KQUBQt3PY-9IF31C0gvjrLFb9jZvp5mmLG6Vcxe1e7Q=" alt="Image 22"></div>
+	<div class="gallery-item"><img src="https://ministryofcurry.com/wp-content/uploads/2021/01/Pad-Thai_-2.jpg" alt="Image 23"></div>
+	<div class="gallery-item"><img src="https://images.immediate.co.uk/production/volatile/sites/2/2023/02/Mushroom-wellington-ba8749e.jpg?quality=90&resize=556,505" alt="Image 24"></div>
+	
+    </section>
+
+</body>
+</html>
