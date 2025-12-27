@@ -36,7 +36,8 @@ Hover effects for a premium UI experience
 Responsive layouts for mobile & desktop
 
 🚀 How to Run the Project
-git clone https://github.com/YOUR-USERNAME/worldly-bites-restaurant-website
+
+git clone https://github.com/Sejalhanje13/Restaurant-website
 cd worldly-bites-restaurant-website
 open index.html        (or double-click to open in browser)
 
